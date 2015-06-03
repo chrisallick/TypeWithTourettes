@@ -58,7 +58,7 @@
 
             <div id="prompts" class="on">
                 <div class="questions">
-                    <p>Hey there, how are you feeling?</p>
+                    <p>Hi buddy. In one sentence, tell me about your wonderful self.</p>
                 </div>
                 <form>
                     <input type="text" />

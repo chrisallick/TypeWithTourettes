@@ -7,9 +7,17 @@ $(window).load(function() {
 });
 
 var questions_index = 0;
-var questions = ["Nice. What are you doing today?", "That sounds like fun. What do you do for a living?"];
+var questions = [
+	"Nice. You sound like an totes interesting person. We should get to know each other. So what have you done today?",
+	"That sounds like fun. What do you do for a living?",
+	"Wow, amazing. I want to know more about you. Describe your perfect night out.",
+	"That sounds like a damn good time. Another question, if you were to be any animal, what would it be, and what would you wear?",
+	"Lol. Now that would be an amusing sight. Let’s keep chatting homie. Who is your favourite actor?",
+	"Awesome choice! I like your rock n roll attitude. What about music, who’s your favorite artist?",
+	"I have no frickin’ idea who that is homie. But who cares? Tell me something about your child hood, your best memory?"
+];
 
-var inserts = ["fuck", "popcorn", "random phrase", "shit", "tits ass"];
+var inserts = ["fuck", "bitch", "dick breath", "twat", "scumbag" "shit", "tits ass"];
 
 var listener;
 
@@ -28,7 +36,7 @@ $(document).ready(function() {
 			$("#prompts input").val( t + " " + inserts[getRandomInt(0, inserts.length-1)] );
 			$('#prompts input').get(0).scrollLeft = $('#prompts input').get(0).scrollWidth;
 
-			space_rand = getRandomInt(2,4);
+			space_rand = getRandomInt(1,3);
 			space_count = 0;
 		}
 
@@ -61,5 +69,7 @@ $(document).ready(function() {
 		$("#prompts .questions").append( "<p class='bold'>"+$("#prompts input").val()+"</p>" );
 		$("#prompts .questions").append( "<p>"+questions[questions_index]+"</p>" );
 		$("#prompts input").val("");
+
+		$('#prompts').scrollTop($('#prompts')[0].scrollHeight);
 	});
 });
