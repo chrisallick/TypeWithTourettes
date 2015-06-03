@@ -1,8 +1,4 @@
 $(window).load(function() {
-	// $("#spacer").css({
-	// 	height: $(window).height()/2 - 20
-	// });
-
 	$("#wrapper").animate({
 		opacity: 1
 	}, 'slow' );
@@ -10,12 +6,39 @@ $(window).load(function() {
 	$("#prompts input").focus();
 });
 
+var questions_index = 0;
+var questions = ["Nice. What are you doing today?", "That sounds like fun. What do you do for a living?"];
+
+var inserts = ["fuck", "popcorn", "random phrase", "shit", "tits ass"];
+
+var listener;
+
+var space_count = 0;
+var space_rand;
 
 $(document).ready(function() {
+	space_rand = getRandomInt(1,3);
+	
+	listener = new window.keypress.Listener();
+	listener.simple_combo("space", function() {
+		space_count++;
+		
+		if( space_count == space_rand ) {
+			var t = $("#prompts input").val();
+			$("#prompts input").val( t + " " + inserts[getRandomInt(0, inserts.length-1)] );
+			$('#prompts input').get(0).scrollLeft = $('#prompts input').get(0).scrollWidth;
+
+			space_rand = getRandomInt(2,4);
+			space_count = 0;
+		}
+
+		return true;
+	});
+
 	$("#wtf").click(function(){
 		if( !$("#info").hasClass("on") ) {
 			$("#info").addClass("on");
-			$(this).text("< back");
+			$(this).text("< BACK");
 
 			$("#prompts").removeClass("on");
 		} else {
@@ -26,63 +49,17 @@ $(document).ready(function() {
 			$("#prompts input").focus();
 		}
 	});
-	// ie = getInternetExplorerVersion() > 0 ? true : false;
 
-	// ebolas = new Ebolas( 70 );
+	$("#prompts form").submit(function(event){
+		event.preventDefault();
 
-	// $(window).resize(function() {
-	// 	ebolas.resize();
-	// });
+		questions_index++;
+		if( questions_index >= questions.length ) {
+			questions_index = 0;
+		}
 
-	// setTimeout(function() {
-	// 	//https://github.com/manuelbieh/jQuery-Geolocation
-	// 	$.geolocation.getCurrentPosition(function(data){
-	// 		if( data && data.coords && data.coords.latitude && data.coords.longitude ) {
-	// 			var dist = calculateClosest( data.coords.latitude, data.coords.longitude );
-
-	// 			dist = commaSeparateNumber( Math.floor(dist) );
-
-	// 			$("#miles").text(dist);
-	// 			$("#location").text(locations[last_key].location);
-
-	// 			$("#loading, #please").animate({
-	// 				opacity: 0
-	// 			}, 'fast');
-
-	// 			$("#title").animate({
-	// 				opacity: 0
-	// 			}, 'slow', function() {
-	// 				$("#spacer").css({
-	// 					height: $(window).height()/2 - 100
-	// 				})
-	// 				$("#loading").hide();
-	// 				$("#title").hide();
-
-	// 				$("#two").css({
-	// 					display: "block"
-	// 				}).animate({
-	// 					opacity: 1
-	// 				});
-
-	// 				$("#two").css({
-	// 					width: $("#miles").width()-35
-	// 				});
-
-	// 				setTimeout(function() {
-	// 					$("#spacer").animate({
-	// 						height: $(window).height()/9
-	// 					}, function(){
-	// 						$("#knowledge").css({display:"block"}).animate({
-	// 							opacity: 1
-	// 						}, function(){
-	// 							$("#speak").delay(1500).animate({
-	// 								opacity: 1
-	// 							});
-	// 						});
-	// 					});
-	// 				}, 1500 );
-	// 			});
-	// 		}
-	// 	});
-	// }, 1000);
+		$("#prompts .questions").append( "<p class='bold'>"+$("#prompts input").val()+"</p>" );
+		$("#prompts .questions").append( "<p>"+questions[questions_index]+"</p>" );
+		$("#prompts input").val("");
+	});
 });
