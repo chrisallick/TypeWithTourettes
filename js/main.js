@@ -6,10 +6,26 @@ $(window).load(function() {
 	$("#wrapper").animate({
 		opacity: 1
 	}, 'slow' );
+
+	$("#prompts input").focus();
 });
 
 
 $(document).ready(function() {
+	$("#wtf").click(function(){
+		if( !$("#info").hasClass("on") ) {
+			$("#info").addClass("on");
+			$(this).text("< back");
+
+			$("#prompts").removeClass("on");
+		} else {
+			$("#info").removeClass("on");
+			$(this).text("WTF?");
+
+			$("#prompts").addClass("on");
+			$("#prompts input").focus();
+		}
+	});
 	// ie = getInternetExplorerVersion() > 0 ? true : false;
 
 	// ebolas = new Ebolas( 70 );
