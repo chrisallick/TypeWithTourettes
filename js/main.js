@@ -17,7 +17,7 @@ var questions = [
 	"I have no frickin’ idea who that is homie. But who cares? Tell me something about your child hood, your best memory?"
 ];
 
-var inserts = ["fuck", "bitch", "dick breath", "twat", "scumbag" "shit", "tits ass"];
+var inserts = ["fuck", "bitch", "dick breath", "twat", "scumbag", "shit", "tits ass"];
 
 var listener;
 
@@ -29,18 +29,20 @@ $(document).ready(function() {
 	
 	listener = new window.keypress.Listener();
 	listener.simple_combo("space", function() {
-		space_count++;
-		
-		if( space_count == space_rand ) {
-			var t = $("#prompts input").val();
-			$("#prompts input").val( t + " " + inserts[getRandomInt(0, inserts.length-1)] );
-			$('#prompts input').get(0).scrollLeft = $('#prompts input').get(0).scrollWidth;
+		if( $("#prompts input").val() != "" ) {
+			space_count++;
+			
+			if( space_count == space_rand ) {
+				var t = $("#prompts input").val();
+				$("#prompts input").val( t + " " + inserts[getRandomInt(0, inserts.length-1)] );
+				$('#prompts input').get(0).scrollLeft = $('#prompts input').get(0).scrollWidth;
 
-			space_rand = getRandomInt(1,3);
-			space_count = 0;
+				space_rand = getRandomInt(1,3);
+				space_count = 0;
+			}
+
+			return true;
 		}
-
-		return true;
 	});
 
 	$("#wtf").click(function(){
