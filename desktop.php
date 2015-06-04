@@ -20,7 +20,7 @@
         <meta property="og:title" content="Type With Tourettes" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="http://typewithtourettes.com" />
-        <meta property="og:description" content="Type with tourettes." />
+        <meta property="og:description" content="What do you know about tourettes? typewithtourettes.com #tourettesawarenessmonth" />
         <meta property="og:image" content="http://typewithtourettes.com/img/sharethis.jpg" />
         <meta property="og:image:width" content="1000" />
         <meta property="og:image:height" content="1000" />
@@ -44,15 +44,15 @@
         <script src='./js/keypress-2.1.0.min.js' type='text/javascript'></script>
         
         <script type="text/javascript">
-            // var _gaq = _gaq || [];
-            // _gaq.push(['_setAccount', 'UA-55647509-1']);
-            // _gaq.push(['_trackPageview']);
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-63780207-1']);
+            _gaq.push(['_trackPageview']);
 
-            // (function() {
-            // var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            // ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            // var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            // })();
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
         </script>
     </head>
     <body>
