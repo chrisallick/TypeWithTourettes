@@ -45,7 +45,9 @@ $(document).ready(function() {
 		}
 	});
 
-	$("#wtf").click(function(){
+	$("#wtf").click(function(event){
+		event.preventDefault();
+		
 		if( !$("#info").hasClass("on") ) {
 			$("#info").addClass("on");
 			$(this).text("< BACK");

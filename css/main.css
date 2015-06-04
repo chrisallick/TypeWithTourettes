@@ -19,10 +19,10 @@ html, body { width: 100%; height: 100%; background-color: #231F20; }
 #prompts p.bold { font: normal 30px helveticaneuebd; color: white; }
 #prompts input { display: block; width: 100%; height: 33px; background: transparent; outline: none; border: none; font: normal 30px helveticaneuebd; color: white; }
 
-#twitter { width: 59px; height: 54px; position: absolute; bottom: 20px; right: 65px; }
+#twitter { width: 45px; position: absolute; bottom: 20px; right: 65px; }
 #twitter img { display: block; width: 100%; height: 100%; }
 
-#facebook { width: 51px; height: 54px; position: absolute; bottom: 20px; right: 20px; }
+#facebook { width: 39px; position: absolute; bottom: 20px; right: 20px; }
 #facebook img { display: block; width: 100%; height: 100%; }
 
 #facebook:hover, #twitter:hover { opacity: .6; }
@@ -32,6 +32,8 @@ html, body { width: 100%; height: 100%; background-color: #231F20; }
 #info h1, #info p, #info p a { color: white; }
 #info h1 { font: normal 30px helveticaneuebd; }
 #info p { font: normal 30px helveticaneuelt; margin-bottom: 30px; }
-#info p a { font: normal 30px helveticaneuelt; margin-bottom: 30px; border-bottom: 1ps solid white; }
+#info p a { font: normal 30px helveticaneuelt; margin-bottom: 30px; border-bottom: 1ps solid white; text-decoration: underline; }
+#info p.small, #info p.small a { font-size: 14px; }
+#info p.small a { text-decoration: underline; }
 
-#wtf { position: absolute; bottom: 20px; left: 20px; color: white; font-size: 30px; font: normal 30px helveticaneuebd; }
+#wtf { position: absolute; bottom: 20px; left: 20px; color: white; font: normal 24px helveticaneuebd; }

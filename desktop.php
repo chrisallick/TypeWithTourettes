@@ -7,14 +7,24 @@
         <meta name="description" content="Type With Tourettes">
         <meta name="keywords" content="type, tourettes, type with tourettes, tourettes syndrome">
 
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="./apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="./apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./apple-touch-icon-152x152.png" />
+
         <meta property="og:title" content="Type With Tourettes" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="http://typewithtourettes.com" />
         <meta property="og:description" content="Type with tourettes." />
-        <meta property="og:image" content="http://typewithtourettes.com/img/sharethis.png" />
+        <meta property="og:image" content="http://typewithtourettes.com/img/sharethis.jpg" />
         <meta property="og:image:width" content="1000" />
         <meta property="og:image:height" content="1000" />
-        <meta property="og:image" content="http://typewithtourettes.com/img/sharethis_wide.png" />
+        <meta property="og:image" content="http://typewithtourettes.com/img/sharethis_wide.jpg" />
         <meta property="og:image:width" content="1910" />
         <meta property="og:image:height" content="1000" />
 
@@ -22,8 +32,8 @@
         <meta name="twitter:url" content="http://typewithtourettes.com"> 
         <meta name="twitter:domain" content="http://typewithtourettes.com">
         <meta name="twitter:title" content="Typing With Tourettes">
-        <meta name="twitter:description" content="Type with tourettes. typewithtourettes.com">
-        <meta name="twitter:image" content="http://typewithtourettes.com/img/sharethis.png" />
+        <meta name="twitter:description" content="F#CK, TW%T, SH!T. What do you know about tourettes? typewithtourettes.com #tourettesawarenessmonth">
+        <meta name="twitter:image" content="http://typewithtourettes.com/img/sharethis.jpg" />
         
         <link href='./css/reset.css' media='all' rel='stylesheet' type='text/css' />
         <link href='./css/main.css' media='all' rel='stylesheet' type='text/css' />
@@ -65,17 +75,18 @@
                 </form>
             </div>
 
-            <a id="twitter" href="javascript:(function(){window.twttr=window.twttr||{};var D=550,A=450,C=screen.height,B=screen.width,H=Math.round((B/2)-(D/2)),G=0,F=document,E;if(C>A){G=Math.round((C/2)-(A/2))}window.twttr.shareWin=window.open('https://twitter.com/intent/tweet?text=How close is ebola to me? ebolanear.me','','left='+H+',top='+G+',width='+D+',height='+A+',personalbar=0,toolbar=0,scrollbars=1,resizable=1');E=F.createElement('script');E.src='http://platform.twitter.com/widgets.js';F.getElementsByTagName('head')[0].appendChild(E)}());" target="_blank"><img src="./img/twitter.png" /></a>
+            <a id="twitter" href="javascript:(function(){window.twttr=window.twttr||{};var D=550,A=450,C=screen.height,B=screen.width,H=Math.round((B/2)-(D/2)),G=0,F=document,E;if(C>A){G=Math.round((C/2)-(A/2))}window.twttr.shareWin=window.open('https://twitter.com/intent/tweet?text=F*CK, TW@T, SH!T. What do you know about tourettes? typewithtourettes.com #tourettesawarenessmonth','','left='+H+',top='+G+',width='+D+',height='+A+',personalbar=0,toolbar=0,scrollbars=1,resizable=1');E=F.createElement('script');E.src='http://platform.twitter.com/widgets.js';F.getElementsByTagName('head')[0].appendChild(E)}());" target="_blank"><img src="./img/twitter.png" /></a>
             <a id="facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('http://ebolanear.me'),'facebook-share-dialog','width=626,height=436'); return false;" target="_blank"><img src="./img/facebook.png" /></a>
 
             <a id="wtf" href="#">WTF?</a>
 
             <div id="info">
-                <h1>WTF</h1>
-                <p>Tourette's is fucking real.</p>
-                <p>Seriously though, it is. Yes, random swearing can make us giggle, but there's more to Tourettes syndrome than just people yelling out poopdick and cumbubble.</p>
-                <p>For many it’s a real problem and struggle, <a href="#">click here</a> to learn more and donate.</p>
+                <h1>WTF?</h1>
+                <p>Tourettes Syndrome is a real thing.</p>
+                <p>And although people yelling out poopdick and cumbubble is funny for a few seconds, the reality of living with the syndrome is a different story and not as funny.</p>
+                <p>May 15 - June 15 is Tourettes Awareness Month, click <a target="_blank" href="http://en.wikipedia.org/wiki/Tourette_syndrome">here</a> to find out more about it and donate to make a difference</p>
                 <p>Thank you.</p>
+                <p class="small">Created by: <a target="_blank" href="http://danmsmith.com">Dan Smith</a>, <a target="_blank" href="http://alexfromsweden.com/">Alexander Norling</a> &amp; <a target="_blank" href="http://chrisallick.com">Chris Allick</a></p>
             </div>
         </div>
     </body>
