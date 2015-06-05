@@ -14,7 +14,7 @@ var questions = [
 	"That sounds like a damn good time. Another question, if you were to be any animal, what would it be, and what would you wear?",
 	"Lol. Now that would be an amusing sight. Let’s keep chatting homie. Who is your favourite actor?",
 	"Awesome choice! I like your rock n roll attitude. What about music, who’s your favorite artist?",
-	"I have no frickin’ idea who that is homie. But who cares? Tell me something about your child hood, your best memory?"
+	"I have no frickin' idea who that is homie. But who cares? Tell me something about your child hood, your best memory?"
 ];
 
 var inserts = ["fuck", "bitch", "dick breath", "twat", "scumbag", "shit", "tits ass"];
