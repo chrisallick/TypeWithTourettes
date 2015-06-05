@@ -82,11 +82,13 @@
 
             <div id="info">
                 <h1>WTF?</h1>
-                <p>Tourettes Syndrome is a real thing.</p>
-                <p>And although people yelling out poopdick and cumbubble is funny for a few seconds, the reality of living with the syndrome is a different story and not as funny.</p>
-                <p>May 15 - June 15 is Tourettes Awareness Month, click <a target="_blank" href="http://en.wikipedia.org/wiki/Tourette_syndrome">here</a> to find out more about it and donate to make a difference</p>
-                <p>Thank you.</p>
-                <p class="small">Created by: <a target="_blank" href="http://danmsmith.com">Dan Smith</a>, <a target="_blank" href="http://alexfromsweden.com/">Alexander Norling</a> &amp; <a target="_blank" href="http://chrisallick.com">Chris Allick</a></p>
+                <div class="wrapper">
+                    <p>Tourettes Syndrome is a real thing.</p>
+                    <p>And although people yelling out poopdick and cumbubble is funny for a few seconds, the reality of living with the syndrome is a different story and not as funny.</p>
+                    <p>May 15 - June 15 is Tourettes Awareness Month, click <a target="_blank" href="http://en.wikipedia.org/wiki/Tourette_syndrome">here</a> to find out more about it and donate to make a difference</p>
+                    <p>Thank you.</p>
+                    <p class="small">Created by: <a target="_blank" href="http://danmsmith.com">Dan Smith</a>, <a target="_blank" href="http://alexfromsweden.com/">Alexander Norling</a> &amp; <a target="_blank" href="http://chrisallick.com">Chris Allick</a></p>
+                </div>
             </div>
         </div>
     </body>

@@ -1,144 +1,79 @@
-function commaSeparateNumber(val){
-	while (/(\d+)(\d{3})/.test(val.toString())){
-  		val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
-	}
-	
-	return val;
-}
-
-// var locations = {
-// 	"dallas": {
-// 		"lat": 32.7833333,
-// 		"lon": -96.8
-// 	}, "spain": {
-// 		"lat": 39.4666667,
-// 		"lon": -0.3666667
-// 	}, "senegal": {
-// 		"lat": 14.6708333,
-// 		"lon": -17.4380556
-// 	}, "sierraleone": {
-// 		"lat": 8.4840000,
-// 		"lon": -13.2299400
-// 	}, "guinea": {
-// 		"lat": 9.537029,
-// 		"lon": -13.67847
-// 	}, "liberia": {
-// 		"lat": 6.358975,
-// 		"lon": -10.744629
-// 	}, "nigeria": {
-// 		"lat": 6.599131,
-// 		"lon": 3.383789
-// 	}, "drofcongo": {
-// 		"lat": -1.691649,
-// 		"lon": 18.874512
-// 	}, "newyork": {
-// 		"lat": 40.738555,
-// 		"lon": -73.975438
-// 	}
-// }
-
-var calculateClosest = function( lat, lon ) {
-	var distance = 100000000;
-	for (var key in locations) {
-		dist = havesineDistance( lat, lon, locations[key].lat, locations[key].lon );
-		if( dist < distance ) {
-			distance = dist;
-			last_key = key;
-		}
-	}
-
-	return distance;
-}
-
-var havesineDistance = function( lat1, lon1, lat2, lon2 ) {
-	var R = 6371; // km 
-
-	var x1 = lat2-lat1;
-	var dLat = toRad(x1);
-	var x2 = lon2-lon1;
-	var dLon = toRad(x2);
-	var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-			Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
-			Math.sin(dLon/2) * Math.sin(dLon/2);
-	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-	
-	return (R * c) * 0.6214; // to miles
-}
-
 $(window).load(function() {
-	$("#spacer").css({
-		height: $(window).height()/2 - $("#title").height() - $("#loading").height()
-	});
-
 	$("#wrapper").animate({
 		opacity: 1
 	}, 'slow' );
+
+	$("#prompts input").focus();
 });
 
-var ie = false;
-var ebolas;
-var last_key;
+var questions_index = 0;
+var questions = [
+	"Nice. You sound like an totes interesting person. We should get to know each other. So what have you done today?",
+	"That sounds like fun. What do you do for a living?",
+	"Wow, amazing. I want to know more about you. Describe your perfect night out.",
+	"That sounds like a damn good time. Another question, if you were to be any animal, what would it be, and what would you wear?",
+	"Lol. Now that would be an amusing sight. Let’s keep chatting homie. Who is your favourite actor?",
+	"Awesome choice! I like your rock n roll attitude. What about music, who’s your favorite artist?",
+	"I have no frickin' idea who that is homie. But who cares? Tell me something about your child hood, your best memory?"
+];
+
+var inserts = ["fuck", "bitch", "dick breath", "twat", "scumbag", "shit", "tits ass"];
+
+var listener;
+
+var space_count = 0;
+var space_rand;
+
 $(document).ready(function() {
+	space_rand = getRandomInt(1,3);
+	
+	listener = new window.keypress.Listener();
+	listener.simple_combo("space", function() {
+		if( $("#prompts input").val() != "" ) {
+			space_count++;
+			
+			if( space_count == space_rand ) {
+				var t = $("#prompts input").val();
+				$("#prompts input").val( t + " " + inserts[getRandomInt(0, inserts.length-1)] );
+				$('#prompts input').get(0).scrollLeft = $('#prompts input').get(0).scrollWidth;
 
-	ie = getInternetExplorerVersion() > 0 ? true : false;
+				space_rand = getRandomInt(1,3);
+				space_count = 0;
+			}
 
-	ebolas = new Ebolas( 40 );
-
-	$(window).resize(function() {
-		ebolas.resize();
+			return true;
+		}
 	});
 
-	setTimeout(function() {
-		//https://github.com/manuelbieh/jQuery-Geolocation
-		$.geolocation.getCurrentPosition(function(data){
-			if( data && data.coords && data.coords.latitude && data.coords.longitude ) {
-				var dist = calculateClosest( data.coords.latitude, data.coords.longitude );
+	$("#wtf").click(function(event){
+		event.preventDefault();
+		
+		if( !$("#info").hasClass("on") ) {
+			$("#info").addClass("on");
+			$(this).text("< BACK");
 
-				dist = commaSeparateNumber( Math.floor(dist) );
+			$("#prompts").removeClass("on");
+		} else {
+			$("#info").removeClass("on");
+			$(this).text("WTF?");
 
-				$("#miles").text(dist);
-				$("#location").text(locations[last_key].location);
-				console.log(last_key, locations, locations[last_key].location);
+			$("#prompts").addClass("on");
+			$("#prompts input").focus();
+		}
+	});
 
-				$("#loading, #please").animate({
-					opacity: 0
-				}, 'fast');
+	$("#prompts form").submit(function(event){
+		event.preventDefault();
 
-				$("#title").animate({
-					opacity: 0
-				}, 'slow', function() {
-					$("#spacer").css({
-						height: $(window).height()/2 - 210
-					})
-					$("#loading").hide();
-					$("#title").hide();
+		questions_index++;
+		if( questions_index >= questions.length ) {
+			questions_index = 0;
+		}
 
-					$("#two").css({display:"block"}).animate({
-						opacity: 1
-					});
+		$("#prompts .questions").append( "<p class='bold'>"+$("#prompts input").val()+"</p>" );
+		$("#prompts .questions").append( "<p>"+questions[questions_index]+"</p>" );
+		$("#prompts input").val("");
 
-					$("#two").css({
-						width: $("#miles").width()-35
-					});
-
-					setTimeout(function() {
-						var h = 25;
-						console.log( $(window).height() );
-						if( $(window).height() > 925 ) {
-							h = 140;
-						}
-						$("#spacer").animate({
-							height: h
-						}, function() {
-							$("#knowledge").css({display:"block"}).animate({
-								opacity: 1
-							});
-						});
-					}, 1500 );
-				});
-			}
-		}, function(err){
-			console.log(err);
-		});
-	}, 1000);
+		$('#prompts').scrollTop($('#prompts')[0].scrollHeight);
+	});
 });

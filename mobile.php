@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ebola Near Me</title>
+        <title>Type With Tourettes</title>
+
+        <meta charset="utf-8">
+        <meta name="description" content="Type With Tourettes">
+        <meta name="keywords" content="type, tourettes, type with tourettes, tourettes syndrome">
 
         <meta name="viewport" content="user-scalable=no, minimal-ui, initial-scale=.5">
 
-        <meta charset="utf-8">
-        <meta name="description" content="How Close is Ebola to Me?">
-        <meta name="keywords" content="ebola, ebola tracker, how close is ebola to me, tracker">
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="./apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="./apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./apple-touch-icon-152x152.png" />
 
-        <meta property="og:title" content="Ebola Near Me" />
+        <meta property="og:title" content="Type With Tourettes" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="http://ebolanear.me" />
-        <meta property="og:description" content="How close is ebola to me?" />
-        <meta property="og:image" content="http://ebolanear.me/img/sharethis.png" />
+        <meta property="og:url" content="http://typewithtourettes.com/stage/" />
+        <meta property="og:description" content="What do you know about tourettes? typewithtourettes.com #tourettesawarenessmonth" />
+        <meta property="og:image" content="http://typewithtourettes.com/stage/img/sharethis.jpg" />
         <meta property="og:image:width" content="1000" />
         <meta property="og:image:height" content="1000" />
-        <meta property="og:image" content="http://ebolanear.me/img/sharethis_wide.png" />
+        <meta property="og:image" content="http://typewithtourettes.com/stage/img/sharethis_wide.jpg" />
         <meta property="og:image:width" content="1910" />
         <meta property="og:image:height" content="1000" />
 
         <meta name="twitter:card" value="summary">
-        <meta name="twitter:url" content="http://ebolanear.me">
-        <meta name="twitter:domain" content="http://ebolanear.me">
-        <meta name="twitter:title" content="Ebola Near Me">
-        <meta name="twitter:description" content="How close is ebola to me? ebolanear.me">
-        <meta name="twitter:image" content="http://ebolanear.me/img/sharethis.png" />
-
-        <link href='./css/reset.css' media='all' rel='stylesheet' type='text/css' />
-        <link href='./css/mobile.css' media='all' rel='stylesheet' type='text/css' />
+        <meta name="twitter:url" content="http://typewithtourettes.com/stage/"> 
+        <meta name="twitter:domain" content="http://typewithtourettes.com/stage/">
+        <meta name="twitter:title" content="Typing With Tourettes">
+        <meta name="twitter:description" content="F#CK, TW%T, SH!T. What do you know about tourettes? typewithtourettes.com #tourettesawarenessmonth">
+        <meta name="twitter:image" content="http://typewithtourettes.com/stage/img/sharethis.jpg" />
         
-        <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js' type='text/javascript'></script>
-        <script src='./js/l.js' type='text/javascript'></script>
-        <script src='./js/mobile.js' type='text/javascript'></script>
-        <script src='./js/plugins.js' type='text/javascript'></script>
-        <script src='./js/jquery.geolocation.min.js' type='text/javascript'></script>
-        <script src='./js/Ebolas.js' type='text/javascript'></script>
+        <link href='./css/reset.css' media='all' rel='stylesheet' type='text/css' />
+        <link href='./css/main.css' media='all' rel='stylesheet' type='text/css' />
 
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js' type='text/javascript'></script>
+        <script src='./js/main.js' type='text/javascript'></script>
+        <script src='./js/plugins.js' type='text/javascript'></script>
+        <script src='./js/keypress-2.1.0.min.js' type='text/javascript'></script>
+        
         <script type="text/javascript">
             var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-55647509-1']);
+            _gaq.push(['_setAccount', 'UA-63780207-1']);
             _gaq.push(['_trackPageview']);
 
             (function() {
@@ -52,37 +60,37 @@
     <body>
         <!--
             Chris Allick    -=[     http://chrisallick.com      ]=-
-            Frank Guzzone   -=[      http://fjguzzone.com       ]=-
             
             Hey! thanks for viewing our site.
         -->
-        <div id="ebolas"></div>
-
         <div id="wrapper">
-
-            <a id="twitter" href="javascript:(function(){window.twttr=window.twttr||{};var D=550,A=450,C=screen.height,B=screen.width,H=Math.round((B/2)-(D/2)),G=0,F=document,E;if(C>A){G=Math.round((C/2)-(A/2))}window.twttr.shareWin=window.open('https://twitter.com/intent/tweet?text=How close is ebola to me? ebolanear.me','','left='+H+',top='+G+',width='+D+',height='+A+',personalbar=0,toolbar=0,scrollbars=1,resizable=1');E=F.createElement('script');E.src='http://platform.twitter.com/widgets.js';F.getElementsByTagName('head')[0].appendChild(E)}());" target="_blank"><img src="./img/twitter.png" /></a>
-            <a id="facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('http://ebolanear.me'),'facebook-share-dialog','width=626,height=436'); return false;" target="_blank"><img src="./img/facebook.png" /></a>
-
-            <div id="spacer"></div>
-
-            <h1 id="title">EBOLA TRACKER</h1>
-            <img id="loading" src="./img/loading.gif" />
-            <p id="please">please enable location services on your browser.</p>
-            
-            <div id="two">
-                <h1 id="ebolais">Ebola is in <span id="location"></span>.</h1>
-                <h1 id="miles">3,452</h1>
-                <h1 id="fromyou">miles from you.</h1>
+            <div id="logo">
+                <img src="./img/logo.png" />
             </div>
 
-            <div id="knowledge">
-                <p><span class="red">Wake up.</span> Warn your friends!  Don't be a victim of the real disease: fear. Decrease hysteria and increase awareness. Read, educate yourself, and change the conversation. The West's myopic approach to media coverage of global events is hurting everyone.</p>
-                <p class="last"><span class="red">Read up.</span></p>
-                <ul>
-                    <li><a target="_blank" href="http://mic.com/articles/100618/one-powerful-illustration-shows-exactly-what-s-wrong-with-media-coverage-of-ebola">What's Wrong With Media Coverage of Ebola</a></li>
-                    <li><a target="_blank" href="http://qz.com/275101/am-i-safe-is-the-wrong-ebola-question-to-ask/">"Am I safe?" Is the Wrong Ebola Question</a></li>
-                    <li><a target="_blank" href="http://www.bbc.co.uk/newsbeat/28692719">"Ebola: The facts without the hype</a></li>
-                </ul>
+            <div id="prompts" class="on">
+                <div class="questions">
+                    <p>Hi buddy. In one sentence, tell me about your wonderful self.</p>
+                </div>
+                <form>
+                    <input type="text" />
+                </form>
+            </div>
+
+            <a id="twitter" href="javascript:(function(){window.twttr=window.twttr||{};var D=550,A=450,C=screen.height,B=screen.width,H=Math.round((B/2)-(D/2)),G=0,F=document,E;if(C>A){G=Math.round((C/2)-(A/2))}window.twttr.shareWin=window.open('https://twitter.com/intent/tweet?text=F*CK, TW@T, SH!T. What do you know about tourettes? typewithtourettes.com #tourettesawarenessmonth','','left='+H+',top='+G+',width='+D+',height='+A+',personalbar=0,toolbar=0,scrollbars=1,resizable=1');E=F.createElement('script');E.src='http://platform.twitter.com/widgets.js';F.getElementsByTagName('head')[0].appendChild(E)}());" target="_blank"><img src="./img/twitter.png" /></a>
+            <a id="facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('http://typewithtourettes.com/stage/'),'facebook-share-dialog','width=626,height=436'); return false;" target="_blank"><img src="./img/facebook.png" /></a>
+
+            <a id="wtf" href="#">WTF?</a>
+
+            <div id="info">
+                <h1>WTF?</h1>
+                <div class="wrapper">
+                    <p>Tourettes Syndrome is a real thing.</p>
+                    <p>And although people yelling out poopdick and cumbubble is funny for a few seconds, the reality of living with the syndrome is a different story and not as funny.</p>
+                    <p>May 15 - June 15 is Tourettes Awareness Month, click <a target="_blank" href="http://en.wikipedia.org/wiki/Tourette_syndrome">here</a> to find out more about it and donate to make a difference</p>
+                    <p>Thank you.</p>
+                    <p class="small">Created by: <a target="_blank" href="http://danmsmith.com">Dan Smith</a>, <a target="_blank" href="http://alexfromsweden.com/">Alexander Norling</a> &amp; <a target="_blank" href="http://chrisallick.com">Chris Allick</a></p>
+                </div>
             </div>
         </div>
     </body>
