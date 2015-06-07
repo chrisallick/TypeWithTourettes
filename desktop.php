@@ -63,7 +63,9 @@
         -->
         <div id="wrapper">
             <div id="logo">
-                <img src="./img/logo.png" />
+                <!-- <img src="./img/logo.png" /> -->
+                <!-- <a id="wtf" href="#">WTF?</a> -->
+                <a href="/">TYPE WITH TOURETTES</a>
             </div>
 
             <div id="prompts" class="on">
@@ -83,9 +85,8 @@
             <div id="info">
                 <h1>WTF?</h1>
                 <div class="wrapper">
-                    <p>Tourettes Syndrome is a real thing.</p>
-                    <p>And although people yelling out poopdick and cumbubble is funny for a few seconds, the reality of living with the syndrome is a different story and not as funny.</p>
-                    <p>May 15 - June 15 is Tourettes Awareness Month, click <a target="_blank" href="http://en.wikipedia.org/wiki/Tourette_syndrome">here</a> to find out more about it and donate to make a difference</p>
+                    <p>Yelling out poopdick and cumbubble is funny, but let’s not forget the reality of living with the syndrome is a different story.</p>
+                    <p>May 15 - June 15 is Tourettes Awareness Month, click <a href="http://www.tsa-usa.org/Medical/whatists.html">here</a> to find out more about it and <a href="http://www.tsa-usa.org/give/gvdon_gen_or_recur.html">donate</a> to make a difference.</p>
                     <p>Thank you.</p>
                     <p class="small">Created by: <a target="_blank" href="http://danmsmith.com">Dan Smith</a>, <a target="_blank" href="http://alexfromsweden.com/">Alexander Norling</a> &amp; <a target="_blank" href="http://chrisallick.com">Chris Allick</a></p>
                 </div>
