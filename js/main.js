@@ -6,6 +6,23 @@ $(window).load(function() {
 	$("#prompts input").focus();
 });
 
+function loadWTF(event) {
+	event.preventDefault();
+
+	if( !$("#info").hasClass("on") ) {
+		$("#info").addClass("on");
+		$(".wtflink").text("< BACK");
+
+		$("#prompts").removeClass("on");
+	} else {
+		$("#info").removeClass("on");
+		$(".wtflink").text("WTF?");
+
+		$("#prompts").addClass("on");
+		$("#prompts input").focus();
+	}
+}
+
 var questions_index = 0;
 var questions = [
 	"Nice. You sound like an totes interesting person. We should get to know each other. So what have you done today?",
@@ -14,7 +31,14 @@ var questions = [
 	"That sounds like a damn good time. Another question, if you were to be any animal, what would it be, and what would you wear?",
 	"Lol. Now that would be an amusing sight. Let’s keep chatting homie. Who is your favorite actor?",
 	"Awesome choice! I like your rock-n-roll attitude. What about music, who’s your favorite artist?",
-	"I have no frickin' idea who that is homie. But who cares? Tell me something about your childhood, your best memory?"
+	"I have no frickin' idea who that is homie. But who cares? Tell me something about your childhood, your best memory?",
+	"Ah memories! What about places? If you could visit anywhere in the world, where would it be and what would you do?",
+	"Oh yeah? I’d love to go there too. Let’s talk about your love life… don’t worry I won’t tell. Describe your dream date, what do they look like?",
+	"You really are the romantic. It’s good talking to you. What are your plans this weekend?",
+	"Real dope. I hope you have a good one. One final question, then I’ll leave you alone. Did you know one in 100 children have some form of Tourette Syndrome?",
+	"It’s true. Also, less than 10% actually use swear words.",
+	"To find out more about Tourette Syndrome, <a onClick='loadWTF(event)' class='wtflink-two' href='#'>click here</a>.",
+	"It’s been real homie. Peace."
 ];
 
 var inserts = [
@@ -82,21 +106,8 @@ $(document).ready(function() {
 		}
 	});
 
-	$("#wtf").click(function(event){
-		event.preventDefault();
-		
-		if( !$("#info").hasClass("on") ) {
-			$("#info").addClass("on");
-			$(this).text("< BACK");
-
-			$("#prompts").removeClass("on");
-		} else {
-			$("#info").removeClass("on");
-			$(this).text("WTF?");
-
-			$("#prompts").addClass("on");
-			$("#prompts input").focus();
-		}
+	$(".wtflink").click(function(event) {
+		loadWTF(event);
 	});
 
 	$("#prompts form").submit(function(event){
