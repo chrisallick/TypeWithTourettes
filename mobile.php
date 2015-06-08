@@ -4,7 +4,7 @@
         <title>Type With Tourettes</title>
 
         <meta charset="utf-8">
-        <meta name="description" content="Type With Tourettes">
+        <meta name="description" content="Type With Tourette's">
         <meta name="keywords" content="type, tourettes, type with tourettes, tourettes syndrome">
         <meta name="viewport" content="user-scalable=no, minimal-ui, initial-scale=.5">
 
@@ -18,10 +18,10 @@
         <link rel="apple-touch-icon" sizes="144x144" href="./apple-touch-icon-144x144.png" />
         <link rel="apple-touch-icon" sizes="152x152" href="./apple-touch-icon-152x152.png" />
 
-        <meta property="og:title" content="Type With Tourettes" />
+        <meta property="og:title" content="Type With Tourette's" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="http://typewithtourettes.com/" />
-        <meta property="og:description" content="What do you know about tourettes? typewithtourettes.com #tourettesawarenessmonth" />
+        <meta property="og:description" content="What do you know about Tourette's Syndrome? typewithtourettes.com #tourettesawarenessmonth" />
         <meta property="og:image" content="http://typewithtourettes.com/img/sharethis.jpg" />
         <meta property="og:image:width" content="1000" />
         <meta property="og:image:height" content="1000" />
@@ -33,7 +33,7 @@
         <meta name="twitter:url" content="http://typewithtourettes.com/"> 
         <meta name="twitter:domain" content="http://typewithtourettes.com/">
         <meta name="twitter:title" content="Typing With Tourettes">
-        <meta name="twitter:description" content="F#CK, TW%T, SH!T. What do you know about tourettes? typewithtourettes.com #tourettesawarenessmonth">
+        <meta name="twitter:description" content="F#CK, TW%T, SH!T. What do you know about Tourette's Syndrome? typewithtourettes.com #tourettesawarenessmonth">
         <meta name="twitter:image" content="http://typewithtourettes.com/img/sharethis.jpg" />
         
         <link href='./css/reset.css' media='all' rel='stylesheet' type='text/css' />
@@ -80,12 +80,12 @@
             <a id="twitter" href="javascript:(function(){window.twttr=window.twttr||{};var D=550,A=450,C=screen.height,B=screen.width,H=Math.round((B/2)-(D/2)),G=0,F=document,E;if(C>A){G=Math.round((C/2)-(A/2))}window.twttr.shareWin=window.open('https://twitter.com/intent/tweet?text=F*CK, TW@T, SH!T. What do you know about tourettes? typewithtourettes.com #tourettesawarenessmonth','','left='+H+',top='+G+',width='+D+',height='+A+',personalbar=0,toolbar=0,scrollbars=1,resizable=1');E=F.createElement('script');E.src='http://platform.twitter.com/widgets.js';F.getElementsByTagName('head')[0].appendChild(E)}());" target="_blank"><img src="./img/twitter.png" /></a>
             <a id="facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('http://typewithtourettes.com/'),'facebook-share-dialog','width=626,height=436'); return false;" target="_blank"><img src="./img/facebook.png" /></a>
 
-            <a id="wtf" href="#">WTF?</a>
+            <a id="wtf" href="#">INFO</a>
 
             <div id="info">
                 <h1>WTF?</h1>
                 <div class="wrapper">
-                    <p>Yelling out poopdick and cumbubble is funny, but living with the syndrome is a different story.</p>
+                    <p>Yelling out poopdick and cumbubble is funny, but living with Tourette's Syndrome is a different story.</p>
                     <p>May 15 - June 15 is Tourettes Awareness Month, click <a href="http://www.tsa-usa.org/Medical/whatists.html">here</a> to find out more about it and <a href="http://www.tsa-usa.org/give/gvdon_gen_or_recur.html">donate</a> to make a difference.</p>
                     <p>Thank you.</p>
                     <p class="small">Created by: <a target="_blank" href="http://danmsmith.com/">Dan Smith</a>, <a target="_blank" href="http://alexfromsweden.com/">Alexander Norling</a> &amp; <a target="_blank" href="http://chrisallick.com/">Chris Allick</a></p>
