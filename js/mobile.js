@@ -12,12 +12,12 @@ function loadWTF(event) {
 
 	if( !$("#info").hasClass("on") ) {
 		$("#info").addClass("on");
-		$(this).text("< BACK");
+		$(".wtflink").text("< BACK");
 
 		$("#prompts").removeClass("on");
 	} else {
 		$("#info").removeClass("on");
-		$(this).text("WTF?");
+		$(".wtflink").text("INFO");
 
 		$("#prompts").addClass("on");
 		$("#prompts input").focus();

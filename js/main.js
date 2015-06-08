@@ -16,7 +16,7 @@ function loadWTF(event) {
 		$("#prompts").removeClass("on");
 	} else {
 		$("#info").removeClass("on");
-		$(".wtflink").text("WTF?");
+		$(".wtflink").text("INFO");
 
 		$("#prompts").addClass("on");
 		$("#prompts input").focus();
