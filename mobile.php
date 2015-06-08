@@ -6,7 +6,6 @@
         <meta charset="utf-8">
         <meta name="description" content="Type With Tourettes">
         <meta name="keywords" content="type, tourettes, type with tourettes, tourettes syndrome">
-
         <meta name="viewport" content="user-scalable=no, minimal-ui, initial-scale=.5">
 
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
@@ -38,10 +37,10 @@
         <meta name="twitter:image" content="http://typewithtourettes.com/stage/img/sharethis.jpg" />
         
         <link href='./css/reset.css' media='all' rel='stylesheet' type='text/css' />
-        <link href='./css/main.css' media='all' rel='stylesheet' type='text/css' />
+        <link href='./css/mobile.css' media='all' rel='stylesheet' type='text/css' />
 
         <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js' type='text/javascript'></script>
-        <script src='./js/main.js' type='text/javascript'></script>
+        <script src='./js/mobile.js' type='text/javascript'></script>
         <script src='./js/plugins.js' type='text/javascript'></script>
         <script src='./js/keypress-2.1.0.min.js' type='text/javascript'></script>
         
@@ -65,15 +64,16 @@
         -->
         <div id="wrapper">
             <div id="logo">
-                <img src="./img/logo.png" />
+                <a href="/">TYPE WITH TOURETTES</a>
             </div>
 
-            <div id="prompts" class="on">
+            <h1 id="taptostart">Tap anywhere to start.</h1>
+            <div id="prompts" class="">
                 <div class="questions">
                     <p>Hi buddy. In one sentence, tell me about your wonderful self.</p>
                 </div>
                 <form>
-                    <input type="text" />
+                    <input type="text"/>
                 </form>
             </div>
 
@@ -85,9 +85,8 @@
             <div id="info">
                 <h1>WTF?</h1>
                 <div class="wrapper">
-                    <p>Tourettes Syndrome is a real thing.</p>
-                    <p>And although people yelling out poopdick and cumbubble is funny for a few seconds, the reality of living with the syndrome is a different story and not as funny.</p>
-                    <p>May 15 - June 15 is Tourettes Awareness Month, click <a target="_blank" href="http://en.wikipedia.org/wiki/Tourette_syndrome">here</a> to find out more about it and donate to make a difference</p>
+                    <p>Yelling out poopdick and cumbubble is funny, but let’s not forget the reality of living with the syndrome is a different story.</p>
+                    <p>May 15 - June 15 is Tourettes Awareness Month, click <a href="http://www.tsa-usa.org/Medical/whatists.html">here</a> to find out more about it and <a href="http://www.tsa-usa.org/give/gvdon_gen_or_recur.html">donate</a> to make a difference.</p>
                     <p>Thank you.</p>
                     <p class="small">Created by: <a target="_blank" href="http://danmsmith.com">Dan Smith</a>, <a target="_blank" href="http://alexfromsweden.com/">Alexander Norling</a> &amp; <a target="_blank" href="http://chrisallick.com">Chris Allick</a></p>
                 </div>

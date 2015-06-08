@@ -2,8 +2,6 @@ $(window).load(function() {
 	$("#wrapper").animate({
 		opacity: 1
 	}, 'slow' );
-
-	$("#prompts input").focus();
 });
 
 var questions_index = 0;
@@ -17,14 +15,225 @@ var questions = [
 	"I have no frickin' idea who that is homie. But who cares? Tell me something about your child hood, your best memory?"
 ];
 
-var inserts = ["fuck", "bitch", "dick breath", "twat", "scumbag", "shit", "tits ass"];
+var inserts = ["assbiting",
+"handjob",
+"suckass",
+"shitass",
+"choady",
+"testicle",
+"dickbag",
+"shitfaced",
+"mothafucka",
+"asssucking",
+"asslicking",
+"boner",
+"vagina",
+"titfuck",
+"assbaggy",
+"asshole",
+"doochbag",
+"shithole",
+"cockshit",
+"fuck",
+"pissflaps",
+"cockass",
+"dum ass",
+"arse",
+"fuckwad",
+"cockass",
+"wanker",
+"dickwad",
+"prick",
+"shitbagger",
+"poonani",
+"dumb ass",
+"slutbag",
+"rimjobbing",
+"fuckwit",
+"asslicker",
+"wankjob",
+"dicksucker",
+"cumdumpster",
+"damn",
+"fuckboy",
+"cunty",
+"dickface",
+"shite",
+"cocksucker",
+"shit",
+"ass",
+"dumbfuck",
+"shitter",
+"peckerhead",
+"dickhole",
+"jizz",
+"bampotting",
+"bollocking",
+"douchey",
+"whorebag",
+"slutty",
+"shithead",
+"cooter",
+"motherfucker",
+"asswiping",
+"twatlip",
+"twat",
+"bollocks",
+"dicksmelling",
+"hoe",
+"asslick",
+"dicks",
+"arseholey",
+"assmuncher",
+"cunt",
+"fuckhead",
+"arsey",
+"asshat",
+"shiznit",
+"queef",
+"shitbrains",
+"hard on",
+"bullshit",
+"lardass",
+"assfucking",
+"shitbag",
+"anus",
+"clitty",
+"cunthole",
+"bonery",
+"fuckass",
+"jerkass",
+"whoreface",
+"penis",
+"clitfuck",
+"skank",
+"cum",
+"cockburger",
+"assmonkey",
+"schlong",
+"assbag",
+"cumslut",
+"bitchin",
+"poontang",
+"vag",
+"ballsy",
+"ballsacking",
+"lameass",
+"fucktard",
+"cockhead",
+"shitdick",
+"dicksmiling",
+"rimjob",
+"tit",
+"cuntlicker",
+"assy",
+"assclowning",
+"fuckface",
+"cocksucking",
+"balls",
+"jerk off",
+"blowjob",
+"smeg",
+"dildo",
+"nutsack",
+"fuckbag",
+"cuntface",
+"bitchass",
+"thundercunt",
+"scrote",
+"dickweed",
+"pussylicking",
+"bitch",
+"assface",
+"pissguzzling",
+"dicks slapping",
+"dickfucker",
+"puto",
+"assclown",
+"cumbubble",
+"shitcunt",
+"pussy",
+"dumbshit",
+"shitty",
+"cuntslut",
+"dickbeaters",
+"shitface",
+"slut",
+"cockface",
+"snatch",
+"shitstained",
+"cuntrag",
+"douchebag",
+"clitfucking",
+"pissing",
+"bastard",
+"jackass",
+"coochy",
+"blowjobby",
+"shiteating",
+"asshatty",
+"shitfuck",
+"cocking",
+"pissy",
+"dick tickling",
+"bullshitting",
+"shithouse",
+"cock",
+"fatass",
+"asswipe",
+"shitspitter",
+"bitchassing",
+"cunnilingus",
+"assfuck",
+"assshitting",
+"fucker",
+"shitbreath",
+"choad",
+"fuckbrain",
+"fuckbutt",
+"douche",
+"clit",
+"asswad",
+"cockbite ",
+"shitwhore",
+"dickhead",
+"cockfucker",
+"ballsack",
+"skanky",
+"asscocking",
+"vajayjay",
+"dick",
+"whore",
+"jagoff",
+"shitstain",
+"assmunching",
+"dipshit",
+"fucking"];
 
 var listener;
 
 var space_count = 0;
 var space_rand;
 
+var bStarted = false;
 $(document).ready(function() {
+	$("#wrapper").click(function() {
+		if( !bStarted ) {
+			bStarted = true;
+			
+			$("#taptostart").hide();
+
+			$("#prompts").addClass("on");
+			$("#prompts input").focus();
+		}
+	});
+
+	$("#prompts input").focus(function(event){
+		setTimeout(function(){
+			$(window).scrollTop(0);	
+		}, 100);
+	})
+
 	space_rand = getRandomInt(1,3);
 	
 	listener = new window.keypress.Listener();
@@ -45,7 +254,10 @@ $(document).ready(function() {
 		}
 	});
 
-	$("#wtf").click(function(event){
+	$("#wtf").click(function(event) {
+		bStarted = true;
+		$("#taptostart").hide();
+
 		event.preventDefault();
 		
 		if( !$("#info").hasClass("on") ) {
@@ -59,6 +271,10 @@ $(document).ready(function() {
 
 			$("#prompts").addClass("on");
 			$("#prompts input").focus();
+
+			setTimeout(function(){
+				$(window).scrollTop(0);	
+			}, 100);
 		}
 	});
 

@@ -63,8 +63,6 @@
         -->
         <div id="wrapper">
             <div id="logo">
-                <!-- <img src="./img/logo.png" /> -->
-                <!-- <a id="wtf" href="#">WTF?</a> -->
                 <a href="/">TYPE WITH TOURETTES</a>
             </div>
 
@@ -73,7 +71,7 @@
                     <p>Hi buddy. In one sentence, tell me about your wonderful self.</p>
                 </div>
                 <form>
-                    <input type="text" />
+                    <input type="readonly" autofocus/>
                 </form>
             </div>
 
