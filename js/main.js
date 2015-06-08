@@ -12,9 +12,9 @@ var questions = [
 	"That sounds like fun. What do you do for a living?",
 	"Wow, amazing. I want to know more about you. Describe your perfect night out.",
 	"That sounds like a damn good time. Another question, if you were to be any animal, what would it be, and what would you wear?",
-	"Lol. Now that would be an amusing sight. Let’s keep chatting homie. Who is your favourite actor?",
-	"Awesome choice! I like your rock n roll attitude. What about music, who’s your favorite artist?",
-	"I have no frickin' idea who that is homie. But who cares? Tell me something about your child hood, your best memory?"
+	"Lol. Now that would be an amusing sight. Let’s keep chatting homie. Who is your favorite actor?",
+	"Awesome choice! I like your rock-n-roll attitude. What about music, who’s your favorite artist?",
+	"I have no frickin' idea who that is homie. But who cares? Tell me something about your childhood, your best memory?"
 ];
 
 var inserts = [
@@ -31,7 +31,7 @@ var inserts = [
 "bitch",
 "damn",
 "arse",
-"bitchy ",
+"bitchy",
 "shit",
 "dicks",
 "cocksucking",
@@ -50,7 +50,7 @@ var inserts = [
 "dumb ass",
 "tit",
 "twat",
-"arsehole",
+"asshole",
 "wanker"
 ];
 
