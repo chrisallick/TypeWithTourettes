@@ -85,7 +85,7 @@
             <div id="info">
                 <h1>WTF?</h1>
                 <div class="wrapper">
-                    <p>Yelling out poopdick and cumbubble is funny, but let’s not forget the reality of living with the syndrome is a different story.</p>
+                    <p>Yelling out poopdick and cumbubble is funny, but living with the syndrome is a different story.</p>
                     <p>May 15 - June 15 is Tourettes Awareness Month, click <a href="http://www.tsa-usa.org/Medical/whatists.html">here</a> to find out more about it and <a href="http://www.tsa-usa.org/give/gvdon_gen_or_recur.html">donate</a> to make a difference.</p>
                     <p>Thank you.</p>
                     <p class="small">Created by: <a target="_blank" href="http://danmsmith.com/">Dan Smith</a>, <a target="_blank" href="http://alexfromsweden.com/">Alexander Norling</a> &amp; <a target="_blank" href="http://chrisallick.com/">Chris Allick</a></p>
