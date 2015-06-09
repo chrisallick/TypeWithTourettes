@@ -36,7 +36,7 @@ var questions = [
 	"Oh yeah? I’d love to go there too. Let’s talk about your love life… don’t worry I won’t tell. Describe your dream date, what do they look like?",
 	"You really are the romantic. It’s good talking to you. What are your plans this weekend?",
 	"Real dope. I hope you have a good one. One final question, then I’ll leave you alone. Did you know one in 100 children have some form of Tourette Syndrome?",
-	"It’s true. Also, less than 10% actually use swear words. To find out more about Tourette Syndrome, <a onClick='loadWTF(event)' class='wtflink-two' href='#'>click here</a>. It’s been real homie. Peace."
+	"It’s true. Also, less than 10% actually use swear words.<br/>To find out more about Tourette Syndrome, <a onClick='loadWTF(event)' class='wtflink-two' href='#'>click here</a>.<br/>It’s been real homie. Peace."
 ];
 
 var inserts = [
@@ -112,14 +112,17 @@ $(document).ready(function() {
 		event.preventDefault();
 
 		questions_index++;
-		if( questions_index >= questions.length ) {
-			questions_index = 0;
+		if( questions_index < questions.length - 1 ) {
+			$("#prompts .questions").append( "<p class='bold'>"+$("#prompts input").val()+"</p>" );
+			$("#prompts .questions").append( "<p>"+questions[questions_index]+"</p>" );
+			$("#prompts input").val("");
+
+			$('#prompts').scrollTop($('#prompts')[0].scrollHeight);
+		} else {
+			$("#prompts .questions").append( "<p class='bold'>"+$("#prompts input").val()+"</p>" );
+			$("#prompts .questions").append( "<p>"+questions[questions_index]+"</p>" );
+			$("#prompts input").hide();
+			$('#prompts').scrollTop($('#prompts')[0].scrollHeight);
 		}
-
-		$("#prompts .questions").append( "<p class='bold'>"+$("#prompts input").val()+"</p>" );
-		$("#prompts .questions").append( "<p>"+questions[questions_index]+"</p>" );
-		$("#prompts input").val("");
-
-		$('#prompts').scrollTop($('#prompts')[0].scrollHeight);
 	});
 });
