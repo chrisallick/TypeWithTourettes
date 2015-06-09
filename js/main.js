@@ -36,9 +36,7 @@ var questions = [
 	"Oh yeah? I’d love to go there too. Let’s talk about your love life… don’t worry I won’t tell. Describe your dream date, what do they look like?",
 	"You really are the romantic. It’s good talking to you. What are your plans this weekend?",
 	"Real dope. I hope you have a good one. One final question, then I’ll leave you alone. Did you know one in 100 children have some form of Tourette Syndrome?",
-	"It’s true. Also, less than 10% actually use swear words.",
-	"To find out more about Tourette Syndrome, <a onClick='loadWTF(event)' class='wtflink-two' href='#'>click here</a>.",
-	"It’s been real homie. Peace."
+	"It’s true. Also, less than 10% actually use swear words. To find out more about Tourette Syndrome, <a onClick='loadWTF(event)' class='wtflink-two' href='#'>click here</a>. It’s been real homie. Peace."
 ];
 
 var inserts = [
