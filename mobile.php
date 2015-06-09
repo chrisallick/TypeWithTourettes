@@ -32,7 +32,7 @@
         <meta name="twitter:card" value="summary">
         <meta name="twitter:url" content="http://typewithtourettes.com/"> 
         <meta name="twitter:domain" content="http://typewithtourettes.com/">
-        <meta name="twitter:title" content="Typing With Tourettes">
+        <meta name="twitter:title" content="Type With Tourettes">
         <meta name="twitter:description" content="F#CK, TW%T, SH!T. What do you know about Tourette's Syndrome? typewithtourettes.com #tourettesawarenessmonth">
         <meta name="twitter:image" content="http://typewithtourettes.com/img/sharethis.jpg" />
         
